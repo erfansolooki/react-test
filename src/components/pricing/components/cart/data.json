@@ -1,0 +1,39 @@
+{
+    "data" : [
+        {
+            "id" : 1,
+            "caption" :"Hobby",
+            "price" : 73,
+            "isMostPopular" : false,
+            "options" : [
+                "Lorem ipsum dolor sit amet",
+                "Ut enim ad minim veniam",
+                "consectetur adipiscing elit, sed do eiusmod"
+            ] 
+        },
+        {
+            "id" : 2,
+            "caption" :"Growth",
+            "price" : 149,
+            "isMostPopular" : true,
+            "options" : [
+                "Lorem ipsum dolor sit amet",
+                "Ut enim ad minim veniam",
+                "consectetur adipiscing elit, sed do eiusmod",
+                "tempor incididunt ut labore et dolore magna aliqua",
+                "quis nostrud exercitation ullamco laboris nisi ut aliquip"
+            ] 
+        },
+        {
+            "id" : 3,
+            "caption" :"Scale",
+            "price" : 349,
+            "isMostPopular" : false,
+            "options" : [
+                "Lorem ipsum dolor sit amet",
+                "Ut enim ad minim veniam",
+                "consectetur adipiscing elit, sed do eiusmod"
+            ] 
+        }
+    ]
+}
