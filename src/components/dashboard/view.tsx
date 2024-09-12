@@ -1,3 +1,9 @@
+import { LeftNav } from "./components/leftNav";
+
 export const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return (
+    <div className="container">
+      <LeftNav />
+    </div>
+  );
 };
