@@ -4,11 +4,15 @@ import { Header } from "./components/header";
 import { IBody } from "./types";
 import { ReactComponent as CloseIcon } from "./icons/CloseCircle.svg";
 
-export const LeftNav = ({ isShowRN }: IBody) => {
+export const LeftNav = ({ isShowRN, setIsShowRN }: IBody) => {
+  const closeRNHandler = () => {
+    setIsShowRN(false);
+  };
+
   return (
     <div className="relative h-screen w-64 min-[360px]:w-80">
       {isShowRN && (
-        <div className="absolute top-4 -right-12">
+        <div className="absolute top-4 -right-12 z-10" onClick={closeRNHandler}>
           <CloseIcon />
         </div>
       )}

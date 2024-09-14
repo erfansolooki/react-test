@@ -1,4 +1,6 @@
 import { ReactComponent as MenuIcon } from "./icons/HambergerMenu.svg";
+import { Profile } from "./profile";
+import { SearchBar } from "./searchBar";
 import { ITopNav } from "./types";
 
 export const TopNav = ({ isShowRN, setIsShowRN }: ITopNav) => {
@@ -6,14 +8,23 @@ export const TopNav = ({ isShowRN, setIsShowRN }: ITopNav) => {
     setIsShowRN(!isShowRN);
   };
   return (
-    <div className="border-b border-gray-100 w-full fixed top-0 left-0 r-0 p-3">
-      <div></div>
+    <div
+      style={{
+        width: window.innerWidth > 600 ? "calc(100vw - 20rem)" : "100%",
+      }}
+      className={`border-b border-gray-100 fixed top-0 right-0 r-0 p-3 flex items-center`}
+    >
+      {!isShowRN && window.innerWidth < 600 ? (
+        <div className="cursor-pointer" onClick={rNToggle}>
+          <MenuIcon />
+        </div>
+      ) : (
+        <></>
+      )}
 
-      <div></div>
+      <SearchBar />
 
-      <div className="cursor-pointer" onClick={rNToggle}>
-        <MenuIcon />
-      </div>
+      <Profile />
     </div>
   );
 };
