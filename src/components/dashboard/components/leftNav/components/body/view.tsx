@@ -54,7 +54,7 @@ export const Body = () => {
       <div>
         {dataItem.map((item) => (
           <div className="flex items-center cursor-pointer py-3 hover:bg-[#f1f2f318] rounded-md pl-2 mt-1 group">
-            <div className="flex">{item.icon}</div>
+            <div className="flex text-red-100">{item.icon}</div>
             <div className="px-2 group-hover:text-white text-gray-300">
               {item.caption}
             </div>
